@@ -53,6 +53,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
+  cd Portfolio
   cd app
 ```
 
@@ -71,5 +72,5 @@ Inicie o servidor
 
 ## Feedback
 
-Se você tiver algum feedback, por favor nos deixe saber por meio de fake@fake.com
+Se você tiver algum feedback, por favor nos deixe saber por meio de lucasluan94@hotmail.com
 
