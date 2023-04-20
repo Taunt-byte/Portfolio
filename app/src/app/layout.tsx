@@ -1,23 +1,16 @@
-'use client'
-import Footer from './components/Footer'
-import { Navbar } from './components/Navbar'
-import './globals.css'
-
+import "./globals.css";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-
       <head />
       <body>
-        <Navbar></Navbar>
         {children}
-        <Footer></Footer>
-        </body>
+      </body>
     </html>
-  )
+  );
 }
