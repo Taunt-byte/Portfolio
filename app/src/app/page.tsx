@@ -1,36 +1,14 @@
 import React from "react";
 //Import for pages
-import Jobs from "./jobs/page";
-import Resumo from "./resumo/page";
-import About from "./about/page";
+import Jobs from "@/jobs/page";
+import Resumo from "@/resumo/page";
+import About from "@/about/page";
+import Navbar from "./Components/Navbar";
 
 export default function Home() {
   return (
-    <main>
-      <header className="bg-gray-800 text-white sticky top-0 z-10">
-        <nav className="container mx-auto flex justify-between items-center py-4">
-          <a href="#resumo" className="text-xl font-bold">
-            Lucas Neves da Silva
-          </a>
-          <ul className="flex items-center">
-            <li>
-              <a href="#resumo" className="px-4 hover:text-gray-300">
-                Início
-              </a>
-            </li>
-            <li>
-              <a href="#" className="px-4 hover:text-gray-300">
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a href="#" className="px-4 hover:text-gray-300">
-                Contato
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <div>
+      <Navbar></Navbar>
       <Resumo></Resumo>
       <About></About>
       <Jobs></Jobs>
@@ -98,6 +76,6 @@ export default function Home() {
           </p>
         </div>
       </footer>
-    </main>
+    </div>
   );
 }

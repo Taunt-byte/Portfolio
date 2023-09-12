@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function About() {
   return (
     <main>
-      <div className="bg-gray-800 text-white pt-5 pb-5">
-        <div className="flex justify-between">
-          <div className="p-10">
+      <div className="p-4">
+        <div className="bg-gray-800 text-white rounded-lg flex justify-between">
+          <div className="p-2">
             <Image
-              src="https://oabcampinas.org.br/wp-content/uploads/2017/01/logo_unisal.jpg"
+              src=""
               alt="Logo da UNISAL"
               width={600}
               height={600}
@@ -30,8 +30,8 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-800 text-white pt-5 pb-5">
-        <div className="flex justify-between">
+      <div className="p-4">
+      <div className="bg-gray-800 text-white rounded-lg flex justify-between">
           <div className="text-justify eading-relaxed px-20">
             <h1 className="font-extrabold text-2xl text-center">
               Aeromodelismo
@@ -56,18 +56,18 @@ export default function About() {
               do conhecimento.
             </p>
           </div>
-          <div className="p-10">
+          <div className="p-2">
             <Image
-              src="https://scontent.fubt1-1.fna.fbcdn.net/v/t1.6435-9/71569395_2469796533057287_4759893154990129152_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=FLapwLnoa6MAX8LQrFD&_nc_ht=scontent.fubt1-1.fna&oh=00_AfAr2jCkZSEDF6rAMiyo0gZUzpIvsV_2CpSMIKStCy3lDw&oe=64690011"
+              src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*RIytHKzAkVlp94z5v7-sNg.jpeg"
               alt="Foto do Autor no clube de aeromodelismo"
               width={600}
               height={600}
             />
           </div>
-        </div>
       </div>
-      <div className="bg-gray-800 text-white pt-5 pb-5">
-        <div className="flex justify-between">
+      </div>
+      <div className="p-4">
+        <div className="bg-gray-800 text-white pt-5 pb-5 flex justify-between rounded-lg">
           <div className="p-10">
             <Image
               src="https://github.com/Taunt-byte/Robo-de-reciclagem/blob/main/img/robo3.png?raw=true"
