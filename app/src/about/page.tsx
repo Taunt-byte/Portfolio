@@ -7,7 +7,7 @@ export default function About() {
         <div className="bg-gray-800 text-white rounded-lg flex justify-between">
           <div className="p-2">
             <Image
-              src=""
+              src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*36bIjmFoSXV2Q6U_tJRmSw.jpeg"
               alt="Logo da UNISAL"
               width={600}
               height={600}
