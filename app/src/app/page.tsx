@@ -17,46 +17,6 @@ export default function Home() {
           <div className="container mx-auto flex justify-between mt-8">
             <div className="w-1/2">
               <h2 className="font-bold text-lg mb-4">Entre em contato</h2>
-              <form>
-                <div className="mb-4">
-                  <label className="block text-gray-200 font-bold mb-2">
-                    Seu nome
-                  </label>
-                  <input
-                    id="name"
-                    type="name"
-                    className="text-black"
-                    placeholder="Digite seu nome"
-                  ></input>
-                </div>
-                <div className="mb-4">
-                  <label className="block text-gray-200 font-bold mb-2">
-                    Seu e-mail
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    className="text-black"
-                    placeholder="Digite seu email"
-                  ></input>
-                </div>
-                <div className="mb-4">
-                  <label className="block text-gray-200 font-bold mb-2">
-                    Sua mensagem
-                  </label>
-                  <textarea
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="message"
-                    placeholder="Digite sua mensagem"
-                  ></textarea>
-                </div>
-                <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="button"
-                >
-                  Enviar
-                </button>
-              </form>
             </div>
             <div className="w-1/2">
               <h2 className="font-bold text-lg mb-4">Informações de contato</h2>
