@@ -3,20 +3,22 @@ import Image from "next/image";
 export default function About() {
   return (
     <main>
-      <div className="p-4">
-        <div className="bg-gray-800 text-white rounded-lg flex justify-between">
+      <div className="p-4" id="sobre">
+      <h1 className="text-black p-10 text-2xl font-extrabold text-center">
+      Formação Acadêmica
+        </h1>
+        <div className="bg-gray-800 text-white rounded-lg flex flex-col items-center">
+          <h1 className="font-extrabold text-2xl p-3">Centro Salesiano Universitário de São Paulo </h1>
           <div className="p-2">
             <Image
               src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*36bIjmFoSXV2Q6U_tJRmSw.jpeg"
               alt="Logo da UNISAL"
               width={600}
               height={600}
+              className="rounded"
             />
           </div>
-          <div className="text-justify eading-relaxed px-20">
-            <h1 className="font-extrabold text-2xl text-center">
-              Formação Academica
-            </h1>
+          <div className="text-justify leading-relaxed px-20 text-center p-5">
             <p>
               Fui estudante de engenharia da computação pelo Centro Salesiano
               Universitário de São Paulo (UNISAL) na faculdade fui membro do
@@ -30,12 +32,20 @@ export default function About() {
           </div>
         </div>
       </div>
+
       <div className="p-4">
-      <div className="bg-gray-800 text-white rounded-lg flex justify-between">
-          <div className="text-justify eading-relaxed px-20">
-            <h1 className="font-extrabold text-2xl text-center">
-              Aeromodelismo
-            </h1>
+        <div className="bg-gray-800 text-white rounded-lg flex flex-col items-center">
+          <h1 className="font-extrabold text-2xl p-3">AeroUnisal</h1>
+          <div className="p-2">
+            <Image
+              src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*RIytHKzAkVlp94z5v7-sNg.jpeg"
+              alt="Foto do Autor no clube de aeromodelismo"
+              width={600}
+              height={600}
+              className="rounded"
+            />
+          </div>
+          <div className="text-justify leading-relaxed px-20 text-center p-5">
             <p>
               O clube de aeromodelismo da UNISAL foi fundado há alguns anos por
               um grupo de estudantes entusiastas, que queriam compartilhar sua
@@ -56,30 +66,22 @@ export default function About() {
               do conhecimento.
             </p>
           </div>
-          <div className="p-2">
-            <Image
-              src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*RIytHKzAkVlp94z5v7-sNg.jpeg"
-              alt="Foto do Autor no clube de aeromodelismo"
-              width={600}
-              height={600}
-            />
-          </div>
+        </div>
       </div>
-      </div>
+
       <div className="p-4">
-        <div className="bg-gray-800 text-white pt-5 pb-5 flex justify-between rounded-lg">
-          <div className="p-10">
+        <div className="bg-gray-800 text-white rounded-lg flex flex-col items-center">
+          <h1 className="font-extrabold text-2xl p-3">Cultura Maker</h1>
+          <div className="p-2">
             <Image
               src="https://github.com/Taunt-byte/Robo-de-reciclagem/blob/main/img/robo3.png?raw=true"
               alt="Foto do robo"
               width={600}
               height={600}
+              className="rounded"
             />
           </div>
-          <div className="text-justify eading-relaxed px-20">
-            <h1 className="font-extrabold text-2xl text-center">
-              Cultura Maker
-            </h1>
+          <div className="text-justify leading-relaxed px-20 text-center p-5">
             <p>
               Cultura Maker é um movimento que vem ganhando cada vez mais
               destaque na sociedade moderna, ele se refere a uma mentalidade de
@@ -97,9 +99,9 @@ export default function About() {
             <p>
               Desde o meu primeiro ano na faculdade, em 2019, os alunos são
               incentivados a criar e compartilhar diversos tipos de projetos
-              relacionados à Cultura Maker com a sociedade,a foto ao lado
-              mostra um desses projetos desenvolvidos durante a graduação: um
-              robô coletor de lixo.
+              relacionados à Cultura Maker com a sociedade,a foto ao lado mostra
+              um desses projetos desenvolvidos durante a graduação: um robô
+              coletor de lixo.
             </p>
           </div>
         </div>

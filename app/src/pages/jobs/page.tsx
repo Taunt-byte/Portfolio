@@ -1,39 +1,36 @@
-"use client"
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Jobs() {
-  const [repos, setRepos] = useState([]);
-
-  useEffect(() => {
-    async function fetchRepos() {
-      const response = await fetch('https://api.github.com/users/Taunt-byte/repos');
-      const data = await response.json();
-      const selectedRepos = data.filter(repo => ['Python-sistema-de-login', 'repo2', 'repo3'].includes(repo.name));
-      setRepos(selectedRepos);
-    }
-    fetchRepos();
-  }, []);
-
   return (
     <main>
-      <div className="text-2xl font-extrabold text-center">
-        <h1 className="text-black p-10">
+      <div className="p-4" id="Projetos">
+        <h1 className="text-black p-10 text-2xl font-extrabold text-center">
           Principais Trabalhos e Projetos
         </h1>
-      </div>
-      <div className="p-4">
-        {repos.map(repo => (
-          <div key={repo.id} className="bg-gray-800 text-white rounded-lg flex justify-between p-4 mb-4">
-            <div>
-              <h2 className="font-bold text-xl">{repo.name}</h2>
-              <p>{repo.description}</p>
-              <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-400">
-                Ver no GitHub
-              </a>
-            </div>
+        <div className="bg-gray-800 text-white rounded-lg flex flex-col items-center">
+          <h1 className="font-extrabold text-2xl p-3">
+            Robô jogador de futebol
+          </h1>
+          <div className="p-2">
+            <Image
+              src="https://github.com/Taunt-byte/UNISAL-Robo-de-futebol/blob/main/img/Foto2.jpeg?raw=true"
+              alt="Foto do robo"
+              width={300}
+              height={300}
+              className="rounded"
+            />
           </div>
-        ))}
+          <div className="text-justify leading-relaxed px-20 text-center p-5">
+            <p>
+              Projeto feito como prova final da disciplina "Tópicos Especiais em
+              Robótica", desenvolvemos um impressionante robô jogador de
+              futebol, integrando conhecimentos teóricos com aplicação prática.
+            </p>
+          </div>
+          <div className="text-justify leading-relaxed text-center p-5">
+          <a href="https://github.com/Taunt-byte/UNISAL-Robo-de-futebol">Github</a>
+          </div>
+        </div>
       </div>
     </main>
   );
