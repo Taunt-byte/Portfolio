@@ -5,7 +5,7 @@ import Resumo from "@/pages/resumo/page";
 import About from "@/pages/about/page";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Hobbies from "./Components/Hobbies";
+import Hobbies from "./Components/hobbies";
 
 export default function Home() {
   return (
