@@ -31,7 +31,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/SEU-USUARIO/"
+              href="https://www.linkedin.com/in/lucas-neves-da-silva-4058211a2/"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-cyan-400 px-5 py-3 font-semibold text-cyan-400 transition hover:bg-cyan-400 hover:text-gray-950"
